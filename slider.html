@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+      }
+
+      .wrap {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .slider_item {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        font-size: 100px;
+        color: white;
+        padding: 100px;
+        line-height: 200px;
+      }
+
+      .showing {
+        z-index: 999;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="slider_item" style="background: #cf564d;">
+        <span>1</span>
+      </div>
+      <div class="slider_item" style="background: #cf5dfc;">
+        <span>2</span>
+      </div>
+      <div class="slider_item" style="background: #cfff45;">
+        <span>3</span>
+      </div>
+      <div class="slider_item" style="background: #cf5fcd;">
+        <span>4</span>
+      </div>
+      <div class="slider_item" style="background: #dc5f4d;">
+        <span>5</span>
+      </div>
+      <div class="slider_item" style="background: #ce5c4a;">
+        <span>6</span>
+      </div>
+    </div>
+
+    <script>
+      const SHOWING_CLASS = "showing";
+      const firstSlide = document.querySelector(".slider_item:first-child");
+
+      function slide() {
+        const currentSlide = document.querySelector(`.${SHOWING_CLASS}`);
+        if(currentSlide){
+          currentSlide.classList.remove(SHOWING_CLASS);
+          const nextSlide = currentSlide.nextElementSibling;
+          if(nextSlide){
+            nextSlide.classList.add(SHOWING_CLASS);
+          } else {
+            firstSlide.classList.add(SHOWING_CLASS);
+          }
+        } else {
+          firstSlide.classList.add(SHOWING_CLASS);
+        }
+      }
+
+      slide();
+      setInterval(slide, 3000);
+
+    </script>
+  </body>
+</html>
