@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+        
+        .wrap {
+            width: 100%;
+            height:auto;
+        }
+        
+        .right_slide_container {
+            width: 1200px;
+            height: 500px;
+            position:relative;
+            margin:50px auto;
+            overflow:hidden;
+        }
+
+        .right_slide_wrap {
+            width: 500%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            left:0;
+            transition:0.5s;
+        }
+
+        .right_side_items {
+            float:left;
+            width:20%;
+            height:100%;
+        }
+
+        .right_side_items:first-child {
+            background: #7ac7d7;
+        }
+
+        .right_side_items:nth-child(2) {
+            background: #3ac3d3;
+        }
+
+        .right_side_items:nth-child(3) {
+            background: #5ac5d5;
+        }
+
+        .right_side_items:nth-child(4) {
+            background: #1ac1d1;
+        }
+
+        .right_side_items:nth-child(5) {
+            background: #9ac9d9;
+        }
+
+        .top_slide_container {
+            width: 1200px;
+            height: 500px;
+            margin:100px auto;
+            position:relative;
+            overflow: hidden;
+        }
+        
+        .top_slide_wrap {
+            width: 100%;
+            height: 100%;
+            position:absolute;
+            top:0;
+            left:0;
+            transition:0.5s;
+            
+        }
+
+        .top_side_items {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .top_side_items:first-child {
+            background: #7ac7d7;
+        }
+
+        .top_side_items:nth-child(2) {
+            background: #3ac3d3;
+        }
+
+        .top_side_items:nth-child(3) {
+            background: #5ac5d5;
+        }
+
+        .top_side_items:nth-child(4) {
+            background: #1ac1d1;
+        }
+
+        .top_side_items:nth-child(5) {
+            background: #9ac9d9;
+        }
+
+
+        .bottom_slide_container {
+            width: 1200px;
+            height: 500px;
+            margin:100px auto;
+            position:relative;
+            overflow: hidden;
+         
+        }
+        
+        .bottom_slide_wrap {
+            width: 100%;
+            height: 100%;
+            position:absolute;
+            bottom: 400%;
+            left:0;
+            transition:0.5s;
+            
+        }
+
+        .bottom_side_items {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .bottom_side_items:first-child {
+            background: #7ac7d7;
+        }
+
+        .bottom_side_items:nth-child(2) {
+            background: #3ac3d3;
+        }
+
+        .bottom_side_items:nth-child(3) {
+            background: #5ac5d5;
+        }
+
+        .bottom_side_items:nth-child(4) {
+            background: #1ac1d1;
+        }
+
+        .bottom_side_items:nth-child(5) {
+            background: #9ac9d9;
+        }
+
+
+        .left_slide_container {
+            width: 1200px;
+            height: 500px;
+            position:relative;
+            margin:50px auto;
+            overflow:hidden;
+        }
+
+        .left_slide_wrap {
+            width: 500%;
+            height: 100%;
+            position: absolute;
+            top:0;
+            right:0;
+            transition:0.5s;
+        }
+
+        .left_side_items {
+            float:right;
+            width:20%;
+            height:100%;
+        }
+
+        .left_side_items:first-child {
+            background: #7ac7d7;
+        }
+
+        .left_side_items:nth-child(2) {
+            background: #3ac3d3;
+        }
+
+        .left_side_items:nth-child(3) {
+            background: #5ac5d5;
+        }
+
+        .left_side_items:nth-child(4) {
+            background: #1ac1d1;
+        }
+
+        .left_side_items:nth-child(5) {
+            background: #9ac9d9;
+        }
+    </style>
+    
+    <title>Alecto</title>
+</head>
+<body>
+        <div class="wrap">
+            <div class="right_slide_container">
+                <div class="right_slide_wrap">
+                    <div class="right_side_items">1</div>
+                    <div class="right_side_items">2</div>
+                    <div class="right_side_items">3</div>
+                    <div class="right_side_items">4</div>
+                    <div class="right_side_items">5</div>
+                </div>
+            </div>
+
+
+            <div class="top_slide_container">
+                    <div class="top_slide_wrap">
+                        <div class="top_side_items">1</div>
+                        <div class="top_side_items">2</div>
+                        <div class="top_side_items">3</div>
+                        <div class="top_side_items">4</div>
+                        <div class="top_side_items">5</div>
+                    </div>
+                </div>
+
+
+                <div class="bottom_slide_container">
+                        <div class="bottom_slide_wrap">
+                            <div class="bottom_side_items">1</div>
+                            <div class="bottom_side_items">2</div>
+                            <div class="bottom_side_items">3</div>
+                            <div class="bottom_side_items">4</div>
+                            <div class="bottom_side_items">5</div>
+                        </div>
+                    </div>
+
+
+                    <div class="left_slide_container">
+                            <div class="left_slide_wrap">
+                                <div class="left_side_items">1</div>
+                                <div class="left_side_items">2</div>
+                                <div class="left_side_items">3</div>
+                                <div class="left_side_items">4</div>
+                                <div class="left_side_items">5</div>
+                            </div>
+                        </div>
+
+    
+        </div>
+
+    <script>
+        var rightSlides = document.querySelector(".right_slide_wrap");
+        var topSlides = document.querySelector(".top_slide_wrap");
+        var btmSlides = document.querySelector(".bottom_slide_wrap");
+        var leftSlides = document.querySelector(".left_slide_wrap");
+
+        
+       
+
+        var right = 0;
+        var tops = 0;
+        var bottoms = 0;
+        var lefts = 0;
+
+
+        function rightSlide(){
+
+            
+
+            if(right == 4) {
+                right = 0;
+            } else {
+                right++;
+            }
+
+            rightSlides.style.left = 1200*(-right)+"px";
+
+            
+        }
+
+        function topSlide() {
+
+            if(tops == 4){
+                tops = 0;
+            }else {
+                tops++;
+            }
+
+            topSlides.style.top = 500*(-tops) + "px";
+
+            
+            
+        }
+
+        function btmSlide() {
+
+            if(bottoms == 4){
+                bottoms = 0;
+            }else {
+                bottoms++;
+            }
+
+            btmSlides.style.bottom = 400-(bottoms*100) + "%";
+
+            
+
+        }
+        
+        function leftSlide(){
+
+            
+
+            if(lefts == 4) {
+                lefts = 0;
+            } else {
+                lefts++;
+            }
+
+            leftSlides.style.right = 1200*(-lefts)+"px";
+
+            
+
+        }
+            setInterval(rightSlide, 3000);
+            setInterval(topSlide, 3000);
+            setInterval(btmSlide, 3000);
+            setInterval(leftSlide, 3000)
+    </script>
+</body>
+</html>
