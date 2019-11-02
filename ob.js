@@ -40,3 +40,14 @@ array.push('method');
 let text = array.length === 0 ? '배열이 비어있습니다.' : '배열이 비어있지 않습니다.';
 
 console.log(text);
+
+// Truthy and Falsy
+
+function prints(person) {
+	if (!person) {
+		console.log('Sorry person is Null');
+	}
+	console.log(person.name);
+}
+
+prints();
