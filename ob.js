@@ -1,3 +1,5 @@
+// Object and Class Study
+
 class Food {
 	constructor(name) {
 		this.name = name;
@@ -28,3 +30,13 @@ chicken.addBrand('교촌');
 
 pizza.print();
 chicken.print();
+
+// 삼항연산자
+
+const array = [];
+
+array.push('method');
+
+let text = array.length === 0 ? '배열이 비어있습니다.' : '배열이 비어있지 않습니다.';
+
+console.log(text);
