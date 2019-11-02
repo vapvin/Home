@@ -1,5 +1,6 @@
 // Object and Class Study
 
+/*
 class Food {
 	constructor(name) {
 		this.name = name;
@@ -29,9 +30,10 @@ chicken.addBrand('BBQ');
 chicken.addBrand('교촌');
 
 pizza.print();
-chicken.print();
+chicken.print(); */
 
 // 삼항연산자
+/*
 
 const array = [];
 
@@ -39,15 +41,21 @@ array.push('method');
 
 let text = array.length === 0 ? '배열이 비어있습니다.' : '배열이 비어있지 않습니다.';
 
-console.log(text);
+console.log(text); */
 
 // Truthy and Falsy
 
-function prints(person) {
+/* function prints(person) {
 	if (!person) {
 		console.log('Sorry person is Null');
 	}
 	console.log(person.name);
-}
+} */
 
-prints();
+const calculateCircleArea = (r = 1) => {
+	return Math.PI * r * r;
+};
+
+const area = calculateCircleArea();
+
+console.log(area);
